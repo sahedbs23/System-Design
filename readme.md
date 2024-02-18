@@ -1,3 +1,3 @@
 ### Javascript Network Request
 
-[- Long Pulling: ](https://javascript.info/network)
+[- Long Pulling: ](https://javascript.info/long-polling#long-polling)
