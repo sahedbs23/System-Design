@@ -1,4 +1,4 @@
-# System Design - Gaurav Sen
+# System Design - [Gaurav Sen] (https://interviewready.io/learn/system-design-course)
 
 ## Fundamentals
 
