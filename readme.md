@@ -63,3 +63,39 @@
   - Do we need reliable Persistence or durability? (If yes, then at least write should be acknowledged only if write is complete in file system and not only in cache at least on one node. Even better it should be done at least at 2 nodes.)
   - Good to ask — Consider successful if replicated or stored in file system? - Talk in detail about which DB you are preferring and why? If you suggesting to use Cassandra, talk in detail the reason. And what are the benefits.
 - RestAPI Design
+
+### (A) Architecture - Connecting the boxes (10-15 minutes)
+
+- Asynchronous component (like processing image/videos): Use Queue/Streaming platform like Kafka
+- Cache / low latency read/write: Use Redis, Couchbase/Memcache
+- File Storage or Block Server (for image / video): AWS S3, HDFS
+- Highly available and fault tolerant persistence: Cassandra,Dynamo
+- Highly consistent storage: Etcd
+- Storage which can help in membership management: Zookeeper, Etcd
+- Search / Full text search: Elasticsearch / Apache Solr
+- Reactive communication between client and server: use WebSocket instead of plain vanilla HTTP
+- Load balancers: AWS ALB for achieving high availability and distributing traffic/requests
+
+### (B) Bonus
+
+- Rate Limit
+  - DDOS
+- SLA/SLO
+- Concurrency
+  - Pessimistic Locking / Mutual exclusion
+  - Optimistic concurrency control
+  - Single writer
+- Push Notifications
+- Data Deduplication
+  - Post-process deduplication
+  - In-line deduplication
+- Operation/deployment
+  - CI/CD
+  - Traffic switching
+  - Schedule/On-demand scaling
+  - Dashboard
+    - Latency
+    - Error
+    - Load
+  - Incident post mortem
+  - Distributed tracing
