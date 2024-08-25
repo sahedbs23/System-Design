@@ -90,6 +90,7 @@
   - Post-process deduplication
   - In-line deduplication
 - Operation/deployment
+
   - CI/CD
   - Traffic switching
   - Schedule/On-demand scaling
@@ -99,3 +100,11 @@
     - Load
   - Incident post mortem
   - Distributed tracing
+
+  ### Important numbers every engineer should know
+
+  - ![numbers](images/numbers-engineers-should-know.png)
+
+  ### Important latency numbers every engineer should know
+
+  - ![latency](images/latency-engineer-should-know.png)
