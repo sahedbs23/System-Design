@@ -103,8 +103,8 @@
 
   ### Important numbers every engineer should know
 
-  - ![numbers](images/numbers-engineers-should-know.png)
+  ![numbers](images/numbers-engineers-should-know.png)
 
   ### Important latency numbers every engineer should know
 
-  - ![latency](images/latency-engineer-should-know.png)
+  ![latency](images/latency-engineer-should-know.png)
